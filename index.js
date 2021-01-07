@@ -5,7 +5,7 @@ const express = require("express");
 // make sure these are configured in your environment
 const port = process.env.PORT || 5000;
 const herokuUrl = process.env.HEROKU_URL;
-const cronSchedule = process.env.CRON_SCHED;
+const cronSchedule = process.env.CRON_SCHEDULE;
 
 const app = express();
 
@@ -14,7 +14,7 @@ const pingHerokuUrl = async () => {
 };
 
 const pingCron = new cron({
-  cronTime: "* * * * * *",
+  cronTime: cronSchedule,
   onTick: pingHerokuUrl,
   start: false,
   timeZone: "America/New_York",
