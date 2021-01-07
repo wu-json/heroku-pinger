@@ -9,6 +9,8 @@ Make sure you configure the environment with these environment variables:
 - `HEROKU_URL`: a public url of your app that can handle a get-request
 - `CRON_SCHEDULE`: a cron schedule in the standard `cronTime` format (ex. `5 0 * 8 *`). If you don't know how to write these, check out [this website.](https://crontab.guru/#5_0_*_8_*)
 
+To use these environment variables, you can put them in a `.env` in the root folder.
+
 Once the above are all configured, just run the following command:
 
 - `npm start`
