@@ -1,0 +1,24 @@
+{
+  "name": "heroku-pinger",
+  "version": "1.0.0",
+  "description": "If you need to keep a free-tier heroku app alive, run this node.js process :).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasonwu2153/heroku-pinger.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jasonwu2153/heroku-pinger/issues"
+  },
+  "homepage": "https://github.com/jasonwu2153/heroku-pinger#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cron": "^1.8.2",
+    "express": "^4.17.1"
+  }
+}
